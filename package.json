@@ -1,0 +1,24 @@
+{
+  "name": "semantic-release-plugin-csproj",
+  "version": "1.0.0",
+  "description": ".NET Core plugin for semantic-release",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Szymon-D/semantic-release-plugin-csproj.git"
+  },
+  "keywords": [
+    "semantic-release",
+    "dotnet"
+  ],
+  "author": "SzymonD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Szymon-D/semantic-release-plugin-csproj/issues"
+  },
+  "homepage": "https://github.com/Szymon-D/semantic-release-plugin-csproj#readme",
+  "dependencies": {}
+}
