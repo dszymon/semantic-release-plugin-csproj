@@ -6,7 +6,7 @@ module.exports.verify = async ({projectFile}, {cwd}) => {
         throw new Error('Missing argument "projectFile"');
     }
 
-    const projectFilePath = path.join(cwd, projectFile);
+    const projectFilePath = path.resolve(cwd, projectFile);
 
     if (!fs.existsSync(projectFilePath)) {
         throw new Error(`Project file "${projectFilePath}" does not exist`);

@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 module.exports.prepare = async ({projectFile}, {cwd, nextRelease, logger}) => {
-    const projectFilePath = path.join(cwd, projectFile);
+    const projectFilePath = path.resolve(cwd, projectFile);
 
     logger.log('Write version %s to %s', nextRelease.version, projectFilePath);
     const xml = (await fs.readFile(projectFilePath)).toString();
