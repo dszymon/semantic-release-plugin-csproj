@@ -19,7 +19,7 @@ module.exports.prepare = async ({projectFile}, {cwd, nextRelease, logger}) => {
 
         nextContent = xml.replace(
             match[0],
-            match[0] + '\n' + match[1] + `<Version>${nextRelease.version}</Version>\n`,
+            match[0] + '\n' + match[1] + `<Version>${nextRelease.version}</Version>`,
         );
     }
     else {
