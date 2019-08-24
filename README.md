@@ -11,6 +11,8 @@
       "projectFile": "someProject.csproj"
     }],
     "@semantic-release/changelog",
-    "@semantic-release/git"
+    ["@semantic-release/git", {
+      "assets": ["CHANGELOG.md", "**/*.csproj"]
+    }]
   ]
 }
